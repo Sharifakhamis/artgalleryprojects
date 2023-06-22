@@ -1,0 +1,25 @@
+
+<mat-card>
+    <mat-card-title class="h1">User Login</mat-card-title>
+    <br>
+    <!-- <img src="assets/images/zba1.jpg" alt="Logo" srcset="" width="270px" class="img"> -->
+    <br>
+    <mat-card-content>
+      <form [formGroup] ="loginForm" (ngLogin)="onLogin()"  class="form">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter your username" formControlName="username">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" placeholder="Enter your password">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" routerLink="/admin_home"  (click)="onLogin()" >Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  <router-outlet></router-outlet>
+  
+  

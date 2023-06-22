@@ -1,0 +1,185 @@
+<!-- SIDEBAR -->
+<section id="sidebar" [ngClass]="status ? 'hide' : ''">
+    <a href="#" class="brand">
+      <i class='bx bxs-smile'></i>
+      <span class="text">Art Gallery</span>
+    </a>
+
+    <!-- Binde two component for user and admin -->
+    <ul class="side-menu top">
+        <li class="active">
+          <a href="#">
+            <i class='bx bxs-dashboard' ></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-shopping-bag-alt' ></i>
+            <span class="text">View Paints</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/user_login">
+            <i class='bx bxs-doughnut-chart' ></i>
+            <span class="text">Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-message-dots' ></i>
+            <span class="text">Make Payment</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-group' ></i>
+            <span class="text">Change Password</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-cog' ></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+
+  
+
+  </section>
+  <!-- SIDEBAR -->
+  
+  
+  
+  <!-- CONTENT -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+      <i (click)="addToggle()" class='bx bx-menu' ></i>
+      <a href="#" class="nav-link">Categories</a>
+     
+    </nav>
+    <!-- NAVBAR -->
+  
+    <!-- MAIN -->
+    <main>
+      <div class="head-title">
+        <div class="left">
+          <h1>Dashboard</h1>
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li><i class='bx bx-chevron-right' ></i></li>
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+
+           
+          </ul>
+        </div>
+        
+      </div>
+  
+     
+      <mat-card>
+        
+        <mat-card-content>
+          <h1>Welcome to art gallery</h1>
+          <mat-card-title class="text-warning">Description  </mat-card-title>
+        
+          <!-- Add more content here -->
+        </mat-card-content>
+      </mat-card>
+      
+    </main>
+    <div class="row">
+                <!-- Picture getlstd-property-photo  -->
+
+        <div class="col-md-6 p-4">
+            <mat-card>
+              <img src="\assets\images\getlstd-property-photo.jpg" class="my_img" width="701px" height="500px">
+              <mat-card-content>
+                <h1>hakuna-matata</h1>
+                <mat-card-title class="text-warning">Description  </mat-card-title>
+                <p>
+                  A photo artist, also known as a photographic artist or fine art photographer, is an individual who uses
+                  photography as a medium for creative expression and artistic exploration. Unlike traditional commercial
+                  photographers who focus on capturing images for commercial or documentary purposes, photo artists strive to
+                  create visually compelling and conceptually rich images that evoke emotions, convey narratives, or explore
+                  abstract ideas.<br>
+                  <a id="submit" [routerLink]="['/payment']">BOOKING NOW</a>
+                </p>
+                <!-- Add more content here -->
+              </mat-card-content>
+            </mat-card>
+          <!-- </div> -->
+       Picture Hakuna Matata 
+        <div class="col-md-6 p-4">
+          <mat-card>
+            <img src="\assets\images\hakuna-matata.jpg" class="my_img" width="701px" height="500px">
+            <mat-card-content>
+              <h1>hakuna-matata</h1>
+              <mat-card-title class="text-warning">Description Hakuna </mat-card-title>
+              <p>
+                A photo artist, also known as a photographic artist or fine art photographer, is an individual who uses
+                photography as a medium for creative expression and artistic exploration. Unlike traditional commercial
+                photographers who focus on capturing images for commercial or documentary purposes, photo artists strive to
+                create visually compelling and conceptually rich images that evoke emotions, convey narratives, or explore
+                abstract ideas.<br>
+                <a id="submit" [routerLink]= "['/payment']">BOOKING NOW</a>
+              </p>
+              <!-- Add more content here -->
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Picture getlstd-property-photo  -->
+
+<div class="col-md-6 p-4">
+    <mat-card>
+      <img src="\assets\images\karibu.jpg" class="my_img" width="701px" height="500px">
+      <mat-card-content>
+        <h1>Karibu p</h1>
+        <mat-card-title class="text-warning">Description  </mat-card-title>
+        <p>
+          A photo artist, also known as a photographic artist or fine art photographer, is an individual who uses
+          photography as a medium for creative expression and artistic exploration. Unlike traditional commercial
+          photographers who focus on capturing images for commercial or documentary purposes, photo artists strive to
+          create visually compelling and conceptually rich images that evoke emotions, convey narratives, or explore
+          abstract ideas.<br>
+          <a id="submit" [routerLink]="['/payment']">BOOKING NOW</a>
+        </p>
+        <!-- Add more content here -->
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!-- Picture Hakuna Matata  -->
+  <div class="col-md-6 p-4">
+  <mat-card>
+    <img src="\assets\images\lion-of-africa-madiba.jpg" class="my_img" width="701px" height="500px">
+    <mat-card-content>
+      <h1>hakuna-matata</h1>
+      <mat-card-title class="text-warning">Description Hakuna </mat-card-title>
+      <p>
+        A photo artist, also known as a photographic artist or fine art photographer, is an individual who uses
+        photography as a medium for creative expression and artistic exploration. Unlike traditional commercial
+        photographers who focus on capturing images for commercial or documentary purposes, photo artists strive to
+        create visually compelling and conceptually rich images that evoke emotions, convey narratives, or explore
+        abstract ideas.
+        <br>
+     
+        <a id="submit" [routerLink]="['/payment']">BOOKING NOW</a>
+      </p>
+      <!-- Add more content here -->
+    </mat-card-content>
+  </mat-card>
+  </div>
+  </div>
+      
+      
+    <!-- MAIN -->
+<!-- </section> -->
+  <!-- CONTENT -->

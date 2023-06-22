@@ -1,0 +1,126 @@
+<!-- SIDEBAR -->
+<section id="sidebar" [ngClass]="status ? 'hide' : ''">
+    <a href="#" class="brand">
+      <i class='bx bxs-smile'></i>
+      <span class="text">Art Gallery</span>
+    </a>
+
+    <!-- Binde two component for user and admin -->
+    <ul class="side-menu top">
+        <li class="active">
+          <a href="#">
+            <i class='bx bxs-dashboard' ></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="admin_login">
+            <i class='bx bxs-shopping-bag-alt' ></i>
+            <span class="text">Register by Artist</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="admin-">
+            <i class='bx bxs-doughnut-chart' ></i>
+            <span class="text">Add gallery</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/list_users">
+            <i class='bx bxs-doughnut-chart' ></i>
+            <span class="text">List of User</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/book_list">
+            <i class='bx bxs-doughnut-chart' ></i>
+            <span class="text">List of Books</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/add-user">
+            <i class='bx bxs-message-dots' ></i>
+            <span class="text">Add User</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="update-userr">
+            <i class='bx bxs-group' ></i>
+            <span class="text">Update User</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-cog' ></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+
+  <!-- For admin only -->
+  
+
+  </section>
+  <!-- SIDEBAR -->
+  
+  
+  
+  <!-- CONTENT -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+      <i (click)="addToggle()" class='bx bx-menu' ></i>
+      <a href="#" class="nav-link">Categories</a>
+     
+    </nav>
+    <!-- NAVBAR -->
+  
+    <!-- MAIN -->
+    <main>
+      <div class="head-title">
+        <div class="left">
+          <h1>Dashboard</h1>
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li><i class='bx bx-chevron-right' ></i></li>
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+  
+     
+      <ul class="box-info">
+        <li>
+          <i class='bx bxs-calendar-check' ></i>
+          <span class="text">
+            <h3>20</h3>
+            <p>New Order</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bxs-group' ></i>
+          <span class="text">
+            <h3>32</h3>
+            <p>Artist </p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bxs-dollar-circle' ></i>
+          <span class="text">
+            <h3>12</h3>
+            <p>Total Post</p>
+          </span>
+        </li>
+      </ul>
+      
+    </main>
+   
+      
+    <!-- MAIN -->
+  </section>
+  <!-- CONTENT -->
